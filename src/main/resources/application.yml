@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: report-service
+  swagger:
+    package: com.zhou.demo.mybatisplus.controller
+  profiles:
+    active: dev
+  datasource:
+      driverClassName: org.postgresql.Driver
+      url: *******************************
+      username: *******************************
+      password: *******************************
+      tomcat:
+          max-active: 300
+
+server:
+  port: 8080
+
+mybatis-plus:
+  type-aliases-package:  com.zhou.demo.mybatisplus.dao.bean
+  configuration:
+    map-underscore-to-camel-case: true
+
